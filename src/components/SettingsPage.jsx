@@ -5,7 +5,8 @@ import {
 } from '@shopify/polaris';
 
 // ⚠️ IMPORTANT: Replace this with your backend's deployed URL
-const BACKEND_URL = 'http://localhost:3000'; // Or your deployed URL like 'https://your-app.herokuapp.com'
+// This tells Vite to use the environment variable we set on Vercel
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 function SettingsPage() {
   const [isLoading, setIsLoading] = useState(true);
