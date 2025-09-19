@@ -26,9 +26,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@shopify/polaris": "^6.0.0",
+    "@shopify/polaris": "^12.27.0",
     "@shopify/polaris-icons": "^9.3.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
