@@ -1,9 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import {
-  Page, Layout, Card, FormLayout, TextField, Button, Heading, ChoiceList,
-  Frame, Toast, Spinner
-} from '@shopify/polaris';
-
+import { Page, Layout, Card, FormLayout, TextField, Button, Text, ChoiceList } from '@shopify/polaris';
 // ⚠️ IMPORTANT: Replace this with your backend's deployed URL
 // This tells Vite to use the environment variable we set on Vercel
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
@@ -79,7 +75,9 @@ function SettingsPage() {
           <Layout.Section>
             <Card sectioned>
               <FormLayout>
-                <Heading>Data Source Configuration</Heading>
+               <Text variant="headingMd" as="h2">
+                Data Source Configuration
+                </Text>
                 <ChoiceList
                   title="Select Data Source"
                   choices={[
